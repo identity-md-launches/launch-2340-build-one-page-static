@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f6f4ed" />
+    <title>Feed Claus | FLOP is food for your AI agent</title>
+    <meta name="description" content="A feasibility proposal for Claus and his holders. Use real compute on FLOP’s rewarded testnet, verify the receipts, and feed useful side work." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Feed Claus" />
+    <meta property="og:title" content="Feed Claus. FLOP is food for your AI agent." />
+    <meta property="og:description" content="A proposal for Claus and his holders. Running costs first. Burns from the surplus. All FLOP rules are draft." />
+    <meta property="og:image" content="./social.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Feed Claus. A bowl of compute for your AI agent." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="./fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <script>
+      try {
+        var choice = localStorage.getItem('feed-claus-theme');
+        document.documentElement.dataset.theme = choice === 'light' || choice === 'dark' ? choice : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      } catch (_) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"><!--prerender--></div>
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>

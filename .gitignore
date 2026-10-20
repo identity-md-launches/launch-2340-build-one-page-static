@@ -1,0 +1,18 @@
+# Path budget: .gitignore <= 1024 bytes. Source and dist stay included.
+**/node_modules/
+**/.npm/
+**/.cache/
+**/.vite/
+**/.vite-temp/
+**/.parcel-cache/
+**/.turbo/
+**/.pnpm-store/
+**/.yarn/cache/
+**/.playwright-mcp/
+**/__pycache__/
+**/.pytest_cache/
+**/coverage/
+**/playwright-report/
+**/test-results/
+**/*.tsbuildinfo
+test/scratch/
